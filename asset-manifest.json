@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/reactstickynotes/static/css/main.be50b644.css",
+    "main.js": "/reactstickynotes/static/js/main.23ba1baf.js",
+    "static/js/787.67297143.chunk.js": "/reactstickynotes/static/js/787.67297143.chunk.js",
+    "index.html": "/reactstickynotes/index.html",
+    "static/media/cancel-icon.svg": "/reactstickynotes/static/media/cancel-icon.d16285af062cc6a7965c.svg",
+    "main.be50b644.css.map": "/reactstickynotes/static/css/main.be50b644.css.map",
+    "main.23ba1baf.js.map": "/reactstickynotes/static/js/main.23ba1baf.js.map",
+    "787.67297143.chunk.js.map": "/reactstickynotes/static/js/787.67297143.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be50b644.css",
+    "static/js/main.23ba1baf.js"
+  ]
+}
