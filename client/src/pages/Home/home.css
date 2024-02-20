@@ -1,0 +1,7 @@
+.notes-grid {
+    width: 100vw;
+    height: auto; 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, 20rem);
+    grid-gap: 1rem; 
+}
