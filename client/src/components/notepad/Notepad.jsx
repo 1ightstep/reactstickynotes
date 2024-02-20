@@ -17,7 +17,7 @@ const Notepad = (props) => {
     <Draggable nodeRef={nodeRef}> 
         <div ref={nodeRef}>
             <div className="notepad" onDoubleClick={() => {props.handleRipNote(contentRef.current.value)}}>
-                <div className="user-display">{props.username}</div>
+                <div className="notepad-bind"></div>
                 <div className="note-taking-container" onDoubleClick={props.handleRipNote}>
                     <textarea ref={contentRef} className="note-taking" onChange={handleChange}></textarea>
                 </div>

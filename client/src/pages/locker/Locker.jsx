@@ -13,8 +13,8 @@ const Locker = (props) => {
                 <form className="locker-component-form" onSubmit={handleSubmit}>
                     <input onChange={(e) => { setLocker(e.target.value) }} className="locker-input" placeholder="locker"/>
                     <div className="locker-component-btns">
-                        <button className="locker-open-btn" onClick={() => {props.handleOpen(locker)}}>Open</button>
-                        <button className="locker-create-btn" onClick={() => {props.handleCreate(locker)}}>Create</button>
+                        <button className="locker-open-btn" onClick={() => { locker && props.handleOpen(locker)}}>Open</button>
+                        <button className="locker-create-btn" onClick={() => {locker && props.handleCreate(locker)}}>Create</button>
                     </div>
                 </form>
             </div>

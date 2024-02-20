@@ -1,9 +1,9 @@
 const config = {
     db: {
         host: 'localhost',
-        user: 'nodejs',
-        password: '@Nodejs12345',
-        database: 'reactstickynotesdb',
+        user: '<username>',
+        password: '<password>',
+        database: '<database>',
         connectionTimeout: '-1'
     }
 }

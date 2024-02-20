@@ -14,7 +14,7 @@ function App() {
   const handleCreate = (locker) => {
     vertifyLocker(locker)
       .then((response) => {
-        if (response.data) {
+        if (!response.data) {
           createLocker(locker);
           extractNotesData(locker)
             .then((data) => {

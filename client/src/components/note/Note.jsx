@@ -1,6 +1,6 @@
 import './note.css';
 import Draggable from 'react-draggable';
-import { useState, useRef } from 'react';
+import { useRef } from 'react';
 
 const Note = (props) => {
     const nodeRef = useRef();

@@ -12,13 +12,14 @@ const Home = (props) => {
     const handleRipNote = (content) => {
         if (!(content.length > 255)) {
             const date = new Date(); 
-            setNotes([...notes, {
+            const newData = {
                 id: nanoid(),
                 date: `${date.getMonth()+1}/${date.getDate()}/${date.getFullYear()}`,
                 content: content,
                 removed: false
-            }]);
-            addNote(props.locker, notes[notes.length-1]).catch(err => {
+            };
+            setNotes([...notes, newData]);
+            addNote(props.locker, newData).catch((err) => {
                 console.log(err);
             });
         }
@@ -46,10 +47,9 @@ const Home = (props) => {
                     })
                 }
             </div>
-            <Notepad username="Alex" handleRipNote={handleRipNote}/>
+            <Notepad handleRipNote={handleRipNote}/>
         </div>
     );
 }
 
 export default Home; 
-

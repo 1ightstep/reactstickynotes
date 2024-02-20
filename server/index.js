@@ -51,7 +51,6 @@ notesRouter.get("/extract", (req, res) => {
 })
 
 notesRouter.post("/add", (req, res) => {
-    console.log(req.body.params.noteData)
     const { id, content, date} = req.body.params.noteData
     connection.query(`
         INSERT INTO notesdata (locker, id, content, date)
